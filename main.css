@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: #B0C4DE;
+    color: #303030;
+    
+}
+.navbar{
+    display: flex;
+   justify-content: space-between;
+   background-color: orange;
+}
+.nlinks{
+    display: flex;
+}
+#header1{
+    margin: 5px;
+    padding: 5px 5px 5px 20px;
+    float: left;
+    color: white;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+
+li a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 14px 16px;
+    
+}
+li a:hover{
+    color: green;
+    transition: 0.3s;
+}
+
+#fafor{
+    color: green;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right:1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.bar1 {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.bar2 {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.bar3 {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+}
+
+@media (max-width : 700px){
+    .toggle-button{
+        display: flex;
+    }
+    .nlinks{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .nlinks ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nlinks li a{
+        padding: .5rem 1rem;
+    }    
+
+    .nlinks.active{
+        display: flex;
+    }
+}
+
+.header2{
+    margin: 2% 0% 2%;
+    text-align: center;
+    border-left: 10px solid orange;
+    background-color: #bbb;
+}
+
+#pictures{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer{
+    background-color: #303030;
+    color: #B0C4DE;
+    text-align: center;
+}
+#whatsapp{
+    padding: 0% 3% 0% 3%;
+}
+#facebook{
+    padding: 0% 3% 0% 3%;
+}
+#twitter{
+    padding: 0% 3% 0% 3%;
+}
+#instagram{
+    padding: 0% 3% 0% 3%;
+}
+
+
+
+
